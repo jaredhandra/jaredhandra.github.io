@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="My Portfolio">
+		<meta name="author" content="Jared Handra">
+
+		<title>Jared Handra - Software Developer</title>
+
+		<!--Bootstrap core -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+		<!--Custom Styling -->
+		<link href="assets/css/main.css" rel="stylesheet">
+    	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    	<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="logo">
+				<img src="assets/img/logo.png" width="100">
+			</div>
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2 w">
+					<h1>Jared Handra <br/>Software Developer</h1>
+				</div>
+			</div>
+			<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w tooltip-demo">
+				<a data-toggle="tooltip" title="Download Resume" href="assets/jared-handra-resume.doc" target="blank"><i class="fa fa-file"></i></a>
+				<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com" target="blank"><i class="fa fa-envelope"></i></a>
+				<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github"></i></a>
+				<a data-toggle="tooltip" title="Connect with me" href=""><i class="fa fa-linkedin-square" target="blank"></i></a>
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+    	<div class="row w centered">
+    		<br>		
+    		<div class="col-lg-6 col-lg-offset-3 about">
+    			<p>I am studying software development at the University of Cincinnati.<br/>  I do all types of development, but love front end and UI/UX design.<br/> Contact me!</p>
+    		</div>
+    	</div>
+    </div>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script>
+    $('.tooltip-demo').tooltip({
+      selector: "[data-toggle=tooltip]",
+      container: "body"
+    })
+	</script>
+	
+
+    <!--BACKSTRETCH-->
+    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("assets/img/bg.jpg", {speed: 500});
+    </script>
+
+  </body>
+</html>
