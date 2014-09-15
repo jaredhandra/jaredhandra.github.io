@@ -28,7 +28,7 @@
 					<h1>Jared Handra <br/>Software Developer</h1>
 				</div>
 			</div>
-
+		
 			<div class="row centered">
 				<div class="w tooltip-demo">
 					<div class="col-md-1 col-md-offset-4">
@@ -36,7 +36,7 @@
 						<h3>Resume</h3>
 					</div>
 					<div class="col-md-1">
-						<a data-toggle="tooltip" title="Email Me!"><i class="fa fa-envelope" data-toggle="modal" data-target="#contactModal"></i></a><br/>
+						<a data-toggle="tooltip" title="Email Me!"><i class="fa fa-envelope"></i></a><br/>
 						<h3>Contact</h3>
 					</div>
 					<div class="col-md-1">
@@ -50,7 +50,8 @@
 				</div>
 			</div>
     </div>
-    	<div class="modal fade" id="contactModal">
+    <!-- data-toggle="modal" data-target="#contactModal" -->
+    	<!-- <div class="modal fade" id="contactModal">
   			<div class="modal-dialog">
     			<div class="modal-content">
       				<div class="modal-header">
@@ -58,23 +59,25 @@
         				<h4 class="modal-title">Contact Me.</h4>
       				</div>
       				<div class="modal-body">
-	        			<form role="form inline">
+	        			<form role="form inline" id="contactForm" method="post" action="mailto:jared.handra@gmail.com">
 							<div class="form-group">
 							  	<div class="row">
 							  		<div class="col-md-6">
 									    <label for="contactInputName">Name</label>
-									    <input type="text" class="form-control" id="contactInputName">
+									    <input type="text" class="form-control" id="contactName" onblur="checkForErrors(this)" />
+									    <span><p class="help-block" id="contactName_ErrorMessage"></p></span>
 									</div>
 									<div class="col-md-6">
 									    <label for="contactInputEmail">Email address</label>
-									    <input type="email" class="form-control" id="contactInputEmail">
+									    <input type="email" class="form-control" id="contactEmail" onblur="checkForErrors(this)" />
+									    <span><p class="help-block"></p></span>
 								    </div>
 								</div>
 								<br/>
 								<div class="row">
 									<div class="col-md-12">
 										<label for="contactMessage">Message</label>
-										<textarea class="form-control" rows="3" id="contactInputMessage"></textarea>
+										<textarea class="form-control" rows="3" id="contactMessage"></textarea>
 									</div>
 								</div>
 							</div>
@@ -82,11 +85,11 @@
       				</div>
       				<div class="modal-footer">
         				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        				<button type="button" class="btn btn-primary">Send</button>
+        				<button type="button" class="btn btn-primary" input type="button" value="Submit" onClick="submitForm()">Send</button>
       				</div>
-    			</div><!-- /.modal-content -->
-  			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+    			</div>
+  			</div>
+		</div> -->
     <div class="container">
     	<div class="row w centered">
     		<br>		
