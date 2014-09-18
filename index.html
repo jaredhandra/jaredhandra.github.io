@@ -11,113 +11,190 @@
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
 		<!--Custom Styling -->
+		<!--Fonts & FontAwesome-->
 		<link href="assets/css/main.css" rel="stylesheet">
     	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
     	<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
     	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    	<!--Javascript and JQuery -->
+    	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    	<script src="assets/js/hover.zoom.js"></script>
+    	<script src="assets/js/hover.zoom.conf.js"></script>
+    	<script src="assets/js/Chart.js"></script>
+    	<script src="assets/js/smoothscroll.js"></script>
 	</head>
 
-	<body class="background">
+	<body>
+		<div class="navbar navbar-inverse navbar-static-top">
+      		<div class="container">
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a class="navbar-name" href="index.html">Jared Handra</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="smoothScroll" href="#about">About</a></li>
+						<li><a class="smoothScroll" href="#work">Work</a></li>
+						<li><a class="smoothScroll" href="#skills">Skills</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section id="about" name="about"></section>
+		<div id="welcome">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 centered mt">
+						<img src="assets/img/logo.png" alt="jared"width="100">
+						<h1>Hello, I'm Jared</h1>
+						<p>Hi! I'm Jared.  I'm a studying software development at the University of Cincinnati.  I've done lots of types of development, but Front End Development is my favorite.</p>
+						<p>I like creating simple, functional and clean web pages.</p>
+					</div>
+					<div class="row centered">
+						<div class="col-md-1 col-md-offset-4">
+							<a data-toggle="tooltip" title="View Resume" href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-4x"></i></a><br/>
+							<p>Resume</p>
+						</div>
+						<div class="col-md-1">
+							<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-4x"></i></a><br/>
+							<p>Contact</p>
+						</div>
+						<div class="col-md-1">
+							<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-4x"></i></a><br/>
+							<p>Projects</p>
+						</div>
+						<div class="col-md-1">
+							<a data-toggle="tooltip" title="Connect with me" href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-4x" target="blank"></i></a><br/>
+							<p>Connect</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<section id="work" name="work"></section>
+	<div id="projects">
+	    <div class="container">
+	    	<div class="row mt centered">
+	    		<div class="col-md-4">
+	    			<a class="zoom blue" href="http://www.bataviaelectricsupply.com" target="blank"><img class="img-responsive" src="assets/img/portfolio/batavia.png" alt="" height="144" /></a>
+	    			<p>Batavia Electric Supply</p>
+	    		</div>
+	    		<div class="col-md-4">
+	    			<a class="zoom blue" href="http://jaredhandra.github.io/angular-team-map/"><img class="img-responsive" src="assets/img/portfolio/angular-map.png" alt="" height="144" /></a>
+					<p>Angular Team Map</p>
+	    		</div>
+	    		<div class="col-md-4">
+	    			<a class="zoom blue" href="http://jaredhandra.github.io/single-page-app/"><img class="img-responsive" src="assets/img/portfolio/single-page.png" alt="" /></a>
+					<p>Basic Angular App</p>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<section id="skills" name="skills"></section>
+	<div id="skills">
 		<div class="container">
-			<div class="logo centered">
-				<img src="assets/img/logo.png" width="100">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered">
+					<h1>Skills</h1>
+				</div>
+				<div class="col-lg-2 col-lg-offset-1 centered">
+					<canvas id="javascript" height="130" width="130"></canvas>
+					<p>Javascript</p>
+					<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 60,
+										color:"#2980b9"
+									},
+									{
+										value : 40,
+										color : "#ffffff"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-2 centered">
+						<canvas id="bootstrap" height="130" width="130"></canvas>
+						<p>Bootstrap</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 75,
+										color:"#2980b9"
+									},
+									{
+										value : 25,
+										color : "#ffffff"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-2 centered">
+						<canvas id="html" height="130" width="130"></canvas>
+						<p>HTML & CSS</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 75,
+										color:"#2980b9"
+									},
+									{
+										value : 25,
+										color : "#ffffff"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-2 centered">
+						<canvas id="java" height="130" width="130"></canvas>
+						<p>Java</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 60,
+										color:"#2980b9"
+									},
+									{
+										value : 40,
+										color : "#ffffff"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-2 centered">
+						<canvas id="c" height="130" width="130"></canvas>
+						<p>C#</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 65,
+										color:"#2980b9"
+									},
+									{
+										value : 35,
+										color : "#ffffff"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("c").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-8 col-lg-offset-2 centered">
+						<h4>Other skills I am working on:</h4>
+						<p>Angularjs, Android Development, iOS Development, ASP.NET MVC 4, JQuery</p>
+					</div>
 			</div>
+		</div>
+	</div>	
 
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2 w">
-					<h1>Jared Handra</h1>
-					<h2>Software Developer</h2>
-				</div>
-			</div>
-		
-			<div class="row centered">
-				<div class="w tooltip-demo">
-					<div class="col-md-1 col-md-offset-4">
-						<a data-toggle="tooltip" title="View Resume" href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file"></i></a><br/>
-						<h3>Resume</h3>
-					</div>
-					<div class="col-md-1">
-						<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope"></i></a><br/>
-						<h3>Contact</h3>
-					</div>
-					<div class="col-md-1">
-						<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github"></i></a><br/>
-						<h3>Projects</h3>
-					</div>
-					<div class="col-md-1">
-						<a data-toggle="tooltip" title="Connect with me" href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square" target="blank"></i></a><br/>
-						<h3>Connect</h3>
-					</div>
-				</div>
-			</div>
-    </div>
-    <!-- data-toggle="modal" data-target="#contactModal" -->
-    	<!-- <div class="modal fade" id="contactModal">
-  			<div class="modal-dialog">
-    			<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        				<h4 class="modal-title">Contact Me.</h4>
-      				</div>
-      				<div class="modal-body">
-	        			<form role="form inline" id="contactForm" method="post" action="mailto:jared.handra@gmail.com">
-							<div class="form-group">
-							  	<div class="row">
-							  		<div class="col-md-6">
-									    <label for="contactInputName">Name</label>
-									    <input type="text" class="form-control" id="contactName" onblur="checkForErrors(this)" />
-									    <span><p class="help-block" id="contactName_ErrorMessage"></p></span>
-									</div>
-									<div class="col-md-6">
-									    <label for="contactInputEmail">Email address</label>
-									    <input type="email" class="form-control" id="contactEmail" onblur="checkForErrors(this)" />
-									    <span><p class="help-block"></p></span>
-								    </div>
-								</div>
-								<br/>
-								<div class="row">
-									<div class="col-md-12">
-										<label for="contactMessage">Message</label>
-										<textarea class="form-control" rows="3" id="contactMessage"></textarea>
-									</div>
-								</div>
-							</div>
-						</form>
-      				</div>
-      				<div class="modal-footer">
-        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        				<button type="button" class="btn btn-primary" input type="button" value="Submit" onClick="submitForm()">Send</button>
-      				</div>
-    			</div>
-  			</div>
-		</div> -->
-    <div class="container">
-    	<div class="row w centered">
-    		<br>		
-    		<div class="col-lg-6 col-lg-offset-3 about">
-    			<p>I am studying software development at the University of Cincinnati.<br/>  I do all types of development, but love front end and UI/UX design.<br/> Contact me!</p>
-    		</div>
-    	</div>
-    </div>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
-    <script>
-    $('.tooltip-demo').tooltip({
-      selector: "[data-toggle=tooltip]",
-      container: "body"
-    })
-	</script>
-	
-
-    <!--BACKSTRETCH-->
-    <!--<script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-    <script>
-        $.backstretch("assets/img/bg.png", {speed: 500});
-    </script>
-
   </body>
 </html>

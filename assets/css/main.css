@@ -1,44 +1,125 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
-    color: #333;
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+	background-color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #555;
 }
-p {
-	font-family: 'News Cycle', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #333;
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+P {
 	line-height: 28px;
 	margin-bottom: 25px;
-	font-size: 20px;
+	font-size: 16px;
 }
 .centered {
 	text-align: center;
 }
+i {
+	color: black;
+}
 a {
-	color: #000000;
-	word-wrap: break-word;
+	color: white;
 }
 a:hover,
 a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
 }
-.logo {
-	text-align: center;
-	margin-top: 25px;
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+.navbar-inverse {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.navbar-inverse {
+	background-color: #2980b9;
+	border-color: #16a085;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
 }
 
-h1 {
-	font-size: 70px;
+.navbar-name {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
-.w {
-	margin-top: 60px;
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
-.w i {
-	font-size: 40px;
-	padding: 12px;
+
+#welcome{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #f2f2f2;
 }
-.background {
-	background-color: #D2D7D3;
-	background-image: url(../img/bg.png);
+#skills {
+	background-color: #34495e;
+	color: white;
+}
+#skills h1, h2, h3, h4, h5, h6 {
+	color: white;
+	font-weight: 500;
+}
+#skills p {
+	font-size: 12px;
+}
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+    .zoomOverlay {
+        position:absolute;
+        top:0; left:0;
+        bottom:0; right:0;
+        display:none;
+        background-image:url(../img/zoom.png);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+.zoom2 {
+	opacity: 1;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
 }
