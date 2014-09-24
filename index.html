@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="My Portfolio">
 		<meta name="author" content="Jared Handra">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Jared Handra | Software Developer</title>
 
@@ -18,71 +19,81 @@
     	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     	<!--Javascript and JQuery -->
     	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    	<!--hover.zoom.js from -->
     	<script src="assets/js/hover.zoom.js"></script>
     	<script src="assets/js/hover.zoom.conf.js"></script>
+    	<!--chart.js from http://www.chartjs.org/-->
     	<script src="assets/js/Chart.js"></script>
+    	<!--smoothscroll.js from https://github.com/cferdinandi/smooth-scroll-->
     	<script src="assets/js/smoothscroll.js"></script>
 	</head>
 
 	<body>
-		<div class="navbar navbar-inverse navbar-static-top">
+	<div id="navbar">
+    	<div class="navbar navbar-inverse navbar-static-top">
       		<div class="container">
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-left">
-						<li><a class="navbar-name" href="index.html">Jared Handra</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a class="smoothScroll" href="#about">About</a></li>
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="index.html">Jared Handra</a>
+        		</div>
+        		<div class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav navbar-right">
+            			<li><a class="smoothScroll" href="#about">About</a></li>
 						<li><a class="smoothScroll" href="#work">Work</a></li>
 						<li><a class="smoothScroll" href="#skills">Skills</a></li>
-					</ul>
+          			</ul>
+        		</div>
+      		</div>
+    	</div>
+	</div>
+	<section id="about" name="about"></section>
+	<div id="welcome">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered mt">
+					<img src="assets/img/logo.png" alt="jared"width="100">
+					<h1>Hello, I'm Jared</h1>
+					<p>Hi! I'm Jared.  I'm a studying software development at the University of Cincinnati.  I've done lots of types of development, but Front End Development is my favorite.</p>
+					<p>I like creating simple, functional and clean web pages.</p>
 				</div>
-			</div>
-		</div>
-		<section id="about" name="about"></section>
-		<div id="welcome">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 centered mt">
-						<img src="assets/img/logo.png" alt="jared"width="100">
-						<h1>Hello, I'm Jared</h1>
-						<p>Hi! I'm Jared.  I'm a studying software development at the University of Cincinnati.  I've done lots of types of development, but Front End Development is my favorite.</p>
-						<p>I like creating simple, functional and clean web pages.</p>
+				<div class="row centered">
+					<div class="col-xs-3 col-sm-3 col-md-1 col-md-offset-4">
+						<a data-toggle="tooltip" title="View Resume" href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-4x"></i></a><br/>
+						<p>Resume</p>
 					</div>
-					<div class="row centered">
-						<div class="col-md-1 col-md-offset-4">
-							<a data-toggle="tooltip" title="View Resume" href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-4x"></i></a><br/>
-							<p>Resume</p>
-						</div>
-						<div class="col-md-1">
-							<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-4x"></i></a><br/>
+					<div class="col-xs-3 col-sm-3 col-md-1">
+						<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-4x"></i></a><br/>
 							<p>Contact</p>
-						</div>
-						<div class="col-md-1">
-							<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-4x"></i></a><br/>
-							<p>Projects</p>
-						</div>
-						<div class="col-md-1">
-							<a data-toggle="tooltip" title="Connect with me" href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-4x" target="blank"></i></a><br/>
-							<p>Connect</p>
-						</div>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-1">
+						<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-4x"></i></a><br/>
+						<p>Projects</p>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-1">
+						<a data-toggle="tooltip" title="Connect with me" href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-4x" target="blank"></i></a><br/>
+						<p>Connect</p>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	<section id="work" name="work"></section>
 	<div id="projects">
 	    <div class="container">
 	    	<div class="row mt centered">
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4 col-md-4">
 	    			<a class="zoom blue" href="http://www.bataviaelectricsupply.com" target="blank"><img class="img-responsive" src="assets/img/portfolio/batavia.png" alt="" height="144" /></a>
 	    			<p>Batavia Electric Supply</p>
 	    		</div>
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4 col-md-4">
 	    			<a class="zoom blue" href="http://jaredhandra.github.io/angular-team-map/"><img class="img-responsive" src="assets/img/portfolio/angular-map.png" alt="" height="144" /></a>
 					<p>Angular Team Map</p>
 	    		</div>
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4 col-md-4">
 	    			<a class="zoom blue" href="http://jaredhandra.github.io/single-page-app/"><img class="img-responsive" src="assets/img/portfolio/single-page.png" alt="" /></a>
 					<p>Basic Angular App</p>
 	    		</div>
@@ -97,7 +108,9 @@
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<h1>Skills</h1>
 				</div>
-				<div class="col-lg-2 col-lg-offset-1 centered">
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 					<canvas id="javascript" height="130" width="130"></canvas>
 					<p>Javascript</p>
 					<br>
@@ -115,32 +128,32 @@
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-2 centered">
+					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 						<canvas id="bootstrap" height="130" width="130"></canvas>
 						<p>Bootstrap</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 75,
+										value: 85,
 										color:"#2980b9"
 									},
 									{
-										value : 25,
+										value : 15,
 										color : "#ffffff"
 									}
 								];
 								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-2 centered">
+					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 						<canvas id="html" height="130" width="130"></canvas>
 						<p>HTML & CSS</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 75,
+										value: 85,
 										color:"#2980b9"
 									},
 									{
@@ -151,25 +164,7 @@
 								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-2 centered">
-						<canvas id="java" height="130" width="130"></canvas>
-						<p>Java</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 60,
-										color:"#2980b9"
-									},
-									{
-										value : 40,
-										color : "#ffffff"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-2 centered">
+					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 						<canvas id="c" height="130" width="130"></canvas>
 						<p>C#</p>
 						<br>
@@ -187,11 +182,13 @@
 								var myDoughnut = new Chart(document.getElementById("c").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-8 col-lg-offset-2 centered">
-						<h4>Other skills I am working on:</h4>
-						<p>Angularjs, Android Development, iOS Development, ASP.NET MVC 4, JQuery</p>
-					</div>
 			</div>
+			<div class="row">
+				<div class="col-sm-12 col-lg-8 col-lg-offset-2 centered">
+					<h4>Other skills I am developing:</h4>
+					<p>Java, Angularjs, Android Development, iOS Development, ASP.NET MVC 4, JQuery, Python</p>
+				</div>
+			</div>	
 		</div>
 	</div>	
 
