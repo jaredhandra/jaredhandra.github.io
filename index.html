@@ -61,19 +61,19 @@
 					<p>I like creating simple, functional and clean web pages.</p>
 				</div>
 				<div class="row centered">
-					<div class="col-md-1 col-md-offset-4">
+					<div class="col-xs-3 col-sm-3 col-md-1 col-md-offset-4">
 						<a data-toggle="tooltip" title="View Resume" href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-4x"></i></a><br/>
 						<p>Resume</p>
 					</div>
-					<div class="col-md-1">
+					<div class="col-xs-3 col-sm-3 col-md-1">
 						<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-4x"></i></a><br/>
 							<p>Contact</p>
 					</div>
-					<div class="col-md-1">
+					<div class="col-xs-3 col-sm-3 col-md-1">
 						<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-4x"></i></a><br/>
 						<p>Projects</p>
 					</div>
-					<div class="col-md-1">
+					<div class="col-xs-3 col-sm-3 col-md-1">
 						<a data-toggle="tooltip" title="Connect with me" href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-4x" target="blank"></i></a><br/>
 						<p>Connect</p>
 					</div>
@@ -85,15 +85,15 @@
 	<div id="projects">
 	    <div class="container">
 	    	<div class="row mt centered">
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4 col-md-4">
 	    			<a class="zoom blue" href="http://www.bataviaelectricsupply.com" target="blank"><img class="img-responsive" src="assets/img/portfolio/batavia.png" alt="" height="144" /></a>
 	    			<p>Batavia Electric Supply</p>
 	    		</div>
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4 col-md-4">
 	    			<a class="zoom blue" href="http://jaredhandra.github.io/angular-team-map/"><img class="img-responsive" src="assets/img/portfolio/angular-map.png" alt="" height="144" /></a>
 					<p>Angular Team Map</p>
 	    		</div>
-	    		<div class="col-md-4">
+	    		<div class="col-sm-4 col-md-4">
 	    			<a class="zoom blue" href="http://jaredhandra.github.io/single-page-app/"><img class="img-responsive" src="assets/img/portfolio/single-page.png" alt="" /></a>
 					<p>Basic Angular App</p>
 	    		</div>
@@ -108,7 +108,9 @@
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<h1>Skills</h1>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-lg-2 col-lg-offset-1 centered">
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 					<canvas id="javascript" height="130" width="130"></canvas>
 					<p>Javascript</p>
 					<br>
@@ -126,7 +128,7 @@
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-xs-6 col-lg-2 centered">
+					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 						<canvas id="bootstrap" height="130" width="130"></canvas>
 						<p>Bootstrap</p>
 						<br>
@@ -144,7 +146,7 @@
 								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-xs-6 col-lg-2 centered">
+					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 						<canvas id="html" height="130" width="130"></canvas>
 						<p>HTML & CSS</p>
 						<br>
@@ -162,25 +164,7 @@
 								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-xs-6 col-lg-2 centered">
-						<canvas id="java" height="130" width="130"></canvas>
-						<p>Java</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 60,
-										color:"#2980b9"
-									},
-									{
-										value : 40,
-										color : "#ffffff"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-xs-6 col-lg-2 centered">
+					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
 						<canvas id="c" height="130" width="130"></canvas>
 						<p>C#</p>
 						<br>
@@ -198,11 +182,13 @@
 								var myDoughnut = new Chart(document.getElementById("c").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-8 col-lg-offset-2 centered">
-						<h4>Other skills I am working on:</h4>
-						<p>Angularjs, Android Development, iOS Development, ASP.NET MVC 4, JQuery, Python</p>
-					</div>
 			</div>
+			<div class="row">
+				<div class="col-sm-12 col-lg-8 col-lg-offset-2 centered">
+					<h4>Other skills I am developing:</h4>
+					<p>Java, Angularjs, Android Development, iOS Development, ASP.NET MVC 4, JQuery, Python</p>
+				</div>
+			</div>	
 		</div>
 	</div>	
 
