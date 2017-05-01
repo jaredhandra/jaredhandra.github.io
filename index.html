@@ -17,6 +17,7 @@
     	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
     	<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
     	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     	<!--Javascript and JQuery -->
     	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     	<!--hover.zoom.js from -->
@@ -41,11 +42,11 @@
           			<a class="navbar-brand" href="index.html">Jared Handra</a>
         		</div>
         		<div class="navbar-collapse collapse">
-          			<ul class="nav navbar-nav navbar-right">
+          			<!-- <ul class="nav navbar-nav navbar-right">
             			<li><a class="smoothScroll" href="#about">About</a></li>
-						<li><a class="smoothScroll" href="#work">Work</a></li>
-						<li><a class="smoothScroll" href="#skills">Skills</a></li>
-          			</ul>
+									<li><a class="smoothScroll" href="portfolio.html">Portfolio</a></li>
+									<li><a class="smoothScroll" href="#contact">Contact</a></li>
+          			</ul> -->
         		</div>
       		</div>
     	</div>
@@ -54,153 +55,66 @@
 	<div id="welcome">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 centered mt">
-					<img src="assets/img/logo.png" alt="jared"width="100">
-					<h1>Hello, I'm Jared</h1>
-					<p>Hi! I'm Jared.  I'm studying software development at the University of Cincinnati.  I am passionate about mobile and web technologies, but I'm up to learn anything.</p>
-				</div>
-				<div class="row centered">
-					<div class="col-xs-3 col-sm-3 col-md-1 col-md-offset-4">
-						<a data-toggle="tooltip" title="View Resume" href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-4x"></i></a><br/>
-						<p>Resume</p>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-1">
-						<a data-toggle="tooltip" title="Email Me!" href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-4x"></i></a><br/>
-							<p>Contact</p>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-1">
-						<a data-toggle="tooltip" title="View My Projects" href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-4x"></i></a><br/>
-						<p>Projects</p>
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-1">
-						<a data-toggle="tooltip" title="Connect with me" href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-4x" target="blank"></i></a><br/>
-						<p>Connect</p>
-					</div>
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+					<h1>Hi! I'm Jared.</h1>
+					<p>I'm a software developer based in Cincinnati, Ohio.</p><br>
 				</div>
 			</div>
 		</div>
 	</div>
 	<section id="work" name="work"></section>
 	<div id="projects">
-	    <div class="container">
-	    	<div class="row mt centered">
-	    		<div class="col-sm-4 col-md-4">
-	    			<a class="zoom blue" href="http://www.bataviaelectricsupply.com" target="blank"><img class="img-responsive" src="assets/img/portfolio/batavia.png" alt="" height="144" /></a>
-	    			<p>Batavia Electric Supply</p>
-	    		</div>
-	    		<div class="col-sm-4 col-md-4">
-	    			<a class="zoom blue" href="http://jaredhandra.github.io/angular-team-map/"><img class="img-responsive" src="assets/img/portfolio/angular-map.png" alt="" height="144" /></a>
-					<p>Angular Team Map</p>
-	    		</div>
-	    		<div class="col-sm-4 col-md-4">
-	    			<a class="zoom blue" href="https://itunes.apple.com/us/app/medacheck/id997477790?mt=8"><img class="img-responsive" src="assets/img/portfolio/medacheck.png" alt=""/></a>
-					<p>MedaCheck iOS Application</p>
-	    		</div>
-	    	</div>
-	    </div>
-	</div>
-
-	<section id="skills" name="skills"></section>
-	<div id="skills">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 centered">
-					<h1>Skills</h1>
-				</div>
+		<div class="row centered">
+			<div class="col-md-3 project" style="background-color: #27ae60">
+				<a href="https://github.com/jaredhandra/needle">
+					<h1 style="color:white; margin-top:35%">Needle</h1>
+				</a>
+		  </div>
+		  <div class="col-md-3 project" style="background-color: #f2f2f2">
+				<a href="https://github.com/jaredhandra/batavia-electric">
+					<img src="assets/img/company-logo.png">
+				</a>
 			</div>
-			<div class="row">
-				<div class="col-xs-6 col-sm-3 col-lg-3 centered">
-					<canvas id="javascript" height="130" width="130"></canvas>
-					<p>iOS Development</p>
-					<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 60,
-										color:"#2980b9"
-									},
-									{
-										value : 40,
-										color : "#ffffff"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
-						<canvas id="bootstrap" height="130" width="130"></canvas>
-						<p>Bootstrap</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 85,
-										color:"#2980b9"
-									},
-									{
-										value : 15,
-										color : "#ffffff"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
-						<canvas id="html" height="130" width="130"></canvas>
-						<p>HTML & CSS</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 85,
-										color:"#2980b9"
-									},
-									{
-										value : 25,
-										color : "#ffffff"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-xs-6 col-sm-3 col-lg-3 centered">
-						<canvas id="c" height="130" width="130"></canvas>
-						<p>Android Development</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 65,
-										color:"#2980b9"
-									},
-									{
-										value : 35,
-										color : "#ffffff"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("c").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
+		  <div class="col-md-3 project" style="background-color: #336B87">
+				<a href="https://github.com/jaredhandra/compiler">
+					<img src="assets/img/compiler.png" style="margin-top:40%">
+				</a>
 			</div>
-			<div class="row">
-				<div class="col-sm-12 col-lg-8 col-lg-offset-2 centered">
-					<h4>Other skills:</h4>
-					<p>Java, ASP.NET, JQuery, Python, MongoDB, Project Management</p>
-				</div>
-			</div>	
+			<div class="col-md-3 project" style="background-color: #e85b2d">
+				<a href="https://github.com/jaredhandra/inventory">
+					<img src="assets/img/di.png" style="margin-top: 15%">
+				</a>
+			</div>
 		</div>
-	</div>	
-
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-55682323-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+	</div>
+	<section id="contact" name="contact"></section>
+	<div id="contact">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-xs-3 col-sm-3 col-md-1 col-md-offset-4 links">
+					<a href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-2x"></i></a><br/>
+					<p>Resume</p>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-1 links">
+					<a href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-2x"></i></a><br/>
+					<p>Contact</p>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-1 links">
+					<a href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-2x"></i></a><br/>
+					<p>Projects</p>
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-1 links">
+					<a href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-2x" target="blank"></i></a><br/>
+					<p>Connect</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/bootstrap.min.js"></script>
   </body>
+	<!-- <footer class="footer text-center">
+		<div class="container">
+			<p class="text-muted">Copyright 2017 Jared Handra</p>
+		</div>
+	</footer> -->
 </html>
