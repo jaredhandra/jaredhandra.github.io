@@ -19,6 +19,8 @@
                     document.getElementById("userInput").innerHTML = input;
                     document.getElementById("output").innerHTML = ohYes;
                     document.getElementById("reveal").style.display = "block";
+                    var audio = new Audio('smash.mp3');
+                    audio.play();
                 }
             }
         </script>
@@ -30,7 +32,7 @@
             <br>
             God bless and Shrek be with you.
         </p>
-        <input type="number" id="input">
+        <input type="number" id="input" placeholder="Time in hours">
         <button type="button" onclick="shrek()">Shrekitize me captain</button>
         <br>
         <br>
