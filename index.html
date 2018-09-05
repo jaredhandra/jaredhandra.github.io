@@ -1,120 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="My Portfolio">
-		<meta name="author" content="Jared Handra">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<title>Jared Handra | Software Developer</title>
-
-		<!--Bootstrap core -->
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-		<!--Custom Styling -->
-		<!--Fonts & FontAwesome-->
-		<link href="assets/css/main.css" rel="stylesheet">
-    	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    	<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
-    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    	<!--Javascript and JQuery -->
-    	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    	<!--hover.zoom.js from -->
-    	<script src="assets/js/hover.zoom.js"></script>
-    	<script src="assets/js/hover.zoom.conf.js"></script>
-    	<!--chart.js from http://www.chartjs.org/-->
-    	<script src="assets/js/Chart.js"></script>
-    	<!--smoothscroll.js from https://github.com/cferdinandi/smooth-scroll-->
-    	<script src="assets/js/smoothscroll.js"></script>
-	</head>
-
-	<body>
-	<div id="navbar">
-    	<div class="navbar navbar-inverse navbar-static-top">
-      		<div class="container">
-        		<div class="navbar-header">
-          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-          			</button>
-          			<a class="navbar-brand" href="index.html">Jared Handra</a>
-        		</div>
-        		<div class="navbar-collapse collapse">
-          			<!-- <ul class="nav navbar-nav navbar-right">
-            			<li><a class="smoothScroll" href="#about">About</a></li>
-									<li><a class="smoothScroll" href="portfolio.html">Portfolio</a></li>
-									<li><a class="smoothScroll" href="#contact">Contact</a></li>
-          			</ul> -->
-        		</div>
-      		</div>
-    	</div>
-	</div>
-	<section id="about" name="about"></section>
-	<div id="welcome">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<h1>Hi! I'm Jared.</h1>
-					<p>I'm a software developer based in Cincinnati, Ohio.</p><br>
-				</div>
-			</div>
-		</div>
-	</div>
-	<section id="work" name="work"></section>
-	<div id="projects">
-		<div class="row centered">
-			<div class="col-md-3 project" style="background-color: #27ae60">
-				<a href="https://github.com/jaredhandra/needle">
-					<h1 style="color:white; margin-top:35%">Needle</h1>
-				</a>
-		  </div>
-		  <div class="col-md-3 project" style="background-color: #f2f2f2">
-				<a href="https://github.com/jaredhandra/batavia-electric">
-					<img src="assets/img/company-logo.png">
-				</a>
-			</div>
-		  <div class="col-md-3 project" style="background-color: #336B87">
-				<a href="https://github.com/jaredhandra/compiler">
-					<img src="assets/img/compiler.png" style="margin-top:40%">
-				</a>
-			</div>
-			<div class="col-md-3 project" style="background-color: #e85b2d">
-				<a href="https://github.com/jaredhandra/inventory">
-					<img src="assets/img/di.png" style="margin-top: 15%">
-				</a>
-			</div>
-		</div>
-	</div>
-	<section id="contact" name="contact"></section>
-	<div id="contact">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-xs-3 col-sm-3 col-md-1 col-md-offset-4 links">
-					<a href="assets/jared-handra-resume.pdf" target="blank"><i class="fa fa-file fa-2x"></i></a><br/>
-					<p>Resume</p>
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-1 links">
-					<a href="mailto:jared.handra@gmail.com"><i class="fa fa-envelope fa-2x"></i></a><br/>
-					<p>Contact</p>
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-1 links">
-					<a href="https://github.com/jaredhandra" target="blank"><i class="fa fa-github fa-2x"></i></a><br/>
-					<p>Projects</p>
-				</div>
-				<div class="col-xs-3 col-sm-3 col-md-1 links">
-					<a href="https://www.linkedin.com/pub/jared-handra/6a/404/782"><i class="fa fa-linkedin-square fa-2x" target="blank"></i></a><br/>
-					<p>Connect</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="assets/js/bootstrap.min.js"></script>
-  </body>
-	<!-- <footer class="footer text-center">
-		<div class="container">
-			<p class="text-muted">Copyright 2017 Jared Handra</p>
-		</div>
-	</footer> -->
+<html>
+    <head>
+        <link href="http://allfont.net/allfont.css?fonts=shrek" rel="stylesheet" type="text/css" />
+        <style>
+            body {
+                font-family: 'Shrek', arial;
+            }
+            #reveal {
+                color: #61d619
+            }
+        </style>
+        <script>
+            function shrek() {
+                var shrekUnit = 1.35;
+                var input = document.getElementById("input").value;
+                var ohYes = shrekUnit * input;
+                if(ohYes) {
+                    document.getElementById("userInput").innerHTML = input;
+                    document.getElementById("output").innerHTML = ohYes;
+                    document.getElementById("reveal").style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h1>Shrek Calculator</h1>
+        <p id="demo">Use the form below to convert your unit of time to a "shrek". A shrek is a unit of measurement equal to the length of the first shrek film (1 hour and 35 minutes)
+            <br>
+            God bless and Shrek be with you.
+        </p>
+        <input type="number" id="input">
+        <button type="button" onclick="shrek()">Shrekitize me captain</button>
+        <br>
+        <br>
+        <br>
+        <div id="reveal" style="display:none">
+            <h4><span id="userInput"></span> equals <span id="output"></span> Shreks</h4>
+            <iframe src="https://giphy.com/embed/brPpQbKI5vCY8" width="390" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        </center>
+    </body>
 </html>
