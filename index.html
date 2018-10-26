@@ -1,46 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="http://allfont.net/allfont.css?fonts=shrek" rel="stylesheet" type="text/css" />
-        <style>
-            body {
-                font-family: 'Shrek', arial;
-            }
-            #reveal {
-                color: #61d619
-            }
-        </style>
-        <script>
-            function shrek() {
-                var shrekUnit = 1.35;
-                var input = document.getElementById("input").value;
-                var ohYes = shrekUnit * input;
-                if(ohYes) {
-                    document.getElementById("userInput").innerHTML = input;
-                    document.getElementById("output").innerHTML = ohYes;
-                    document.getElementById("reveal").style.display = "block";
-                    var audio = new Audio('smash.mp3');
-                    audio.play();
-                }
-            }
-        </script>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="src/styles.css">
     </head>
     <body>
-        <center>
-        <h1>Shrek Calculator</h1>
-        <p id="demo">Use the form below to convert your unit of time to a "shrek". A shrek is a unit of measurement equal to the length of the first shrek film (1 hour and 35 minutes)
-            <br>
-            God bless and Shrek be with you.
-        </p>
-        <input type="number" id="input" placeholder="Time in hours">
-        <button type="button" onclick="shrek()">Shrekitize me captain</button>
-        <br>
-        <br>
-        <br>
-        <div id="reveal" style="display:none">
-            <h4><span id="userInput"></span> equals <span id="output"></span> Shreks</h4>
-            <iframe src="https://giphy.com/embed/brPpQbKI5vCY8" width="390" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <div class="main">
+            <img src="src/img/logo.png" id="logo" class="center">
+            <h2>Currently a software engineer at GE Aviation</h2>
+            <h4> <a href="https://github.com/jaredhandra" target="_blank">Github</a> &middot; <a href="https://www.linkedin.com/in/jaredhandra/" target="_blank">LinkedIn</a> &middot; <a href="https://www.instagram.com/handrajs/" target="_blank">Instagram</a></h4>
         </div>
-        </center>
     </body>
 </html>
