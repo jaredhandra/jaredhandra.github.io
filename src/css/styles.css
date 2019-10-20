@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    text-align: center;
+    background-color: rgb(229, 229, 229)
+}
+
+a {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+#logo {
+    width: 500px;
+    height: 500px;
+}
+
+#main {
+    padding: 2em;
+    background-color: white;
+}
+
+#name {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+#profile-picture {
+    height: 150px;
+    width: 150px;
+    display: block;
+}
+
+#blurb {
+    text-align: left;
+    font-size: 10.6667px;
+}
+
+.text {
+    font-size: 10.6667px;
+}
+
+a {
+    color: #039 !important;
+    font-weight: 700;
+}
+
+#contact {
+    width: 300px;
+    height: 15px;
+    border-color: #6699cc;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #6699cc;
+}
+
+#contact td {
+    padding: 0px;
+}
+
+#contact-title {
+    color: white
+}
