@@ -1,5 +1,5 @@
 <template>
-  <div id="jared-logo" class="w-1/2">
+  <div class="flex" id="jared-logo">
     <img src="~/static/logo.png">
   </div>
 </template>

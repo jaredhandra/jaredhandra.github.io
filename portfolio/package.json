@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "My bee&#39;s knees Nuxt.js project",
+  "description": "My probably over complicated dev portfolio",
   "author": "Jared Handra",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.8.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
