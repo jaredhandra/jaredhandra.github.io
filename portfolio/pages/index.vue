@@ -7,18 +7,8 @@
     </div>
     <section class="h-screen">
       <div class="mb-10 pt-64">
-        <div class="text-center">
-          <span class="what-i-do">I enjoy creating solutions</span><br>
-          <span class="about">Currently creating Vuejs solutions at GE Aviation</span>
-        </div>
-      </div>
-    </section>
-    <section class="h-screen">
-      <div class="mb-10 pt-64">
         <div class="text-center" id="about-me">
-          <span class="what-i-do">Who are you anyway?</span><br>
-          <span class="about">I enjoy making solutions to solve problems I run into (or make for myself)</span><br>
-          <span class="about">I'm also the President of the FC Cincinnati Supporters Group Die Innenstadt <a href="http://www.dieinnenstadt.com/story" target="_blank">(What's that?)</a></span>
+          <span class="about">Currently a Software Engineer at GE Aviation creating Vuejs solutions.</span><br>
         </div>
       </div>
       <div class="mb-4">
@@ -30,7 +20,13 @@
         </div>
     </div>
     <div class="mb-4">
-      <nowPlaying />
+      <div class="spotify-container text-center">
+        Jared is currently listening to <a :href="url" target="_blank"><b>{{currentTrack}}</b></a> by {{currentArtist}} on Spotify
+      </div>
+    </div>
+    <div class="flex">
+      <div class="w-1/4 p-2">Work</div>
+      <div class="w-1/4 p-2 bg-gray-500 text-center float-right">.w-4/5</div>
     </div>
     </section>
   </div>
@@ -38,12 +34,15 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import NowPlaying from '~/components/NowPlaying.vue'
+import axios from 'axios'
 
 export default {
   components: {
-    Logo,
-    NowPlaying
+    Logo
+  },
+  async asyncData ({ params }) {
+    let { data } = await axios.get(`https://7qjcmqsnic.execute-api.us-east-1.amazonaws.com/beta/spotifyLogin`)
+    return { currentTrack: data.currentlyPlaying.songName, currentArtist: data.currentlyPlaying.artistName, url: data.currentlyPlaying.songUrl }
   }
 }
 </script>
