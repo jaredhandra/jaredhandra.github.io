@@ -24,10 +24,6 @@
         Jared is currently listening to <a :href="url" target="_blank"><b>{{currentTrack}}</b></a> by {{currentArtist}} on Spotify
       </div>
     </div>
-    <div class="flex">
-      <div class="w-1/4 p-2">Work</div>
-      <div class="w-1/4 p-2 bg-gray-500 text-center float-right">.w-4/5</div>
-    </div>
     </section>
   </div>
 </template>
